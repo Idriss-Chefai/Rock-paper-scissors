@@ -16,16 +16,23 @@ function computer(){
 
 scissors.addEventListener("click", () => {
     let choice = computer();
+    document.getElementById("players-choice").textContent = `You : Scissors`;
+    document.getElementById("computers-choice").textContent = `Computer : ${choice}`;
     win("Scissors",choice);
+    
 })
 
 paper.addEventListener("click", () => {
     let choice = computer();
+    document.getElementById("players-choice").textContent = `You : Paper`;
+    document.getElementById("computers-choice").textContent = `Computer : ${choice}`;
     win("Paper",choice);
 })
 
 rock.addEventListener("click", () => {
     let choice = computer();
+    document.getElementById("players-choice").textContent = `You : Rock`;
+    document.getElementById("computers-choice").textContent = `Computer : ${choice}`;
     win("Rock",choice);
 })
 
